@@ -1,0 +1,19 @@
+[project]
+name = "wx-connector-pysdk"
+version = "0.1.0"
+description = "wx-connector-pysdk 是一个为便捷在python项目中使用WxConnector进行开发而构建的轮子"
+readme = "README.md"
+authors = [
+    { name = "Eliver", email = "Eliver52@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3",
+    "websocket-client>=1.8.0",
+]
+license = { text = "AGPL-3.0-only" }
+license-files = ["LICENSE"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
