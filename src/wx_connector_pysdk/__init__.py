@@ -135,3 +135,15 @@ def send_file(file_path: str, send_to: str) -> None:
         f"http://{url_base}/api/Action/sendFile",
         json={"FilePath": file_path, "SendWindowTitle": send_to}
     )
+
+def at_by_username_in_group(username: str, window_title) -> None:
+    """
+    用于在群聊内通过用户的备注名at用户
+    :param username: 要 at 用户的备注名
+    :param window_title: 群聊窗口的标题
+    :return: None
+    """
+    requests.post(
+        f"http://{url_base}/api/Action/AtByUserNameInGroup",
+        json={"UserName": username, "WindowTitle": window_title}
+    )

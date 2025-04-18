@@ -1,6 +1,6 @@
 [project]
 name = "wx-connector-pysdk"
-version = "0.1.0"
+version = "0.1.1"
 description = "wx-connector-pysdk 是一个为便捷在python项目中使用WxConnector进行开发而构建的轮子"
 readme = "README.md"
 authors = [
