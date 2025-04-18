@@ -136,7 +136,7 @@ def send_file(file_path: str, send_to: str) -> None:
         json={"FilePath": file_path, "SendWindowTitle": send_to}
     )
 
-def at_by_username_in_group(username: str, window_title) -> None:
+def at_by_username_in_group(username: str, window_title: str) -> None:
     """
     用于在群聊内通过用户的备注名at用户
     :param username: 要 at 用户的备注名
